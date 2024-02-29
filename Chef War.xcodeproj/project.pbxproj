@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		766317EF2B8FD067000818AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766317EE2B8FD067000818AC /* AppDelegate.swift */; };
+		766317F12B8FD067000818AC /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 766317F02B8FD067000818AC /* GameScene.sks */; };
+		766317F52B8FD067000818AC /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766317F42B8FD067000818AC /* GameScene.swift */; };
+		766317F72B8FD067000818AC /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766317F62B8FD067000818AC /* GameViewController.swift */; };
+		766317FA2B8FD067000818AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 766317F82B8FD067000818AC /* Main.storyboard */; };
+		766317FC2B8FD069000818AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766317FB2B8FD069000818AC /* Assets.xcassets */; };
+		766317FF2B8FD069000818AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 766317FD2B8FD069000818AC /* LaunchScreen.storyboard */; };
+		766318072B8FD137000818AC /* ChefNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766318062B8FD137000818AC /* ChefNode.swift */; };
+		766318092B8FD315000818AC /* CleaverNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766318082B8FD315000818AC /* CleaverNode.swift */; };
+		7663180C2B8FD52C000818AC /* CGPoint+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663180B2B8FD52C000818AC /* CGPoint+Tools.swift */; };
+		7663180E2B8FD6D0000818AC /* AntNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663180D2B8FD6D0000818AC /* AntNode.swift */; };
+		766318102B90B0F7000818AC /* GameScene+ContactDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663180F2B90B0F7000818AC /* GameScene+ContactDelegate.swift */; };
+		766318122B90B889000818AC /* Comparable+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766318112B90B889000818AC /* Comparable+Tools.swift */; };
+		766318152B90CB5B000818AC /* TowelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766318142B90CB5B000818AC /* TowelNode.swift */; };
+		766318172B90CC20000818AC /* Array+SKTextures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766318162B90CC20000818AC /* Array+SKTextures.swift */; };
+		7663181B2B90D9C6000818AC /* Picked.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766318192B90D9C6000818AC /* Picked.wav */; };
+		7663181C2B90D9C6000818AC /* Hit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7663181A2B90D9C6000818AC /* Hit.wav */; };
+		7663181F2B90D9EB000818AC /* SoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663181E2B90D9EB000818AC /* SoundController.swift */; };
+		766318212B90DF8B000818AC /* background.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766318202B90DF8A000818AC /* background.wav */; };
+		766318232B90E43B000818AC /* gameover.WAV in Resources */ = {isa = PBXBuildFile; fileRef = 766318222B90E43B000818AC /* gameover.WAV */; };
+		766318252B90E69C000818AC /* ScoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766318242B90E69C000818AC /* ScoreController.swift */; };
+		766318272B90E6BD000818AC /* ScoreNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766318262B90E6BD000818AC /* ScoreNode.swift */; };
+		7663182F2B90EB6A000818AC /* Downhill Dive DEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7663182E2B90EB6A000818AC /* Downhill Dive DEMO.otf */; };
+		766318312B90EC0B000818AC /* PPMori-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 766318302B90EC0B000818AC /* PPMori-Regular.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		766317EB2B8FD067000818AC /* Chef War.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chef War.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		766317EE2B8FD067000818AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		766317F02B8FD067000818AC /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		766317F42B8FD067000818AC /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		766317F62B8FD067000818AC /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		766317F92B8FD067000818AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		766317FB2B8FD069000818AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		766317FE2B8FD069000818AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		766318062B8FD137000818AC /* ChefNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefNode.swift; sourceTree = "<group>"; };
+		766318082B8FD315000818AC /* CleaverNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaverNode.swift; sourceTree = "<group>"; };
+		7663180B2B8FD52C000818AC /* CGPoint+Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Tools.swift"; sourceTree = "<group>"; };
+		7663180D2B8FD6D0000818AC /* AntNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntNode.swift; sourceTree = "<group>"; };
+		7663180F2B90B0F7000818AC /* GameScene+ContactDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+ContactDelegate.swift"; sourceTree = "<group>"; };
+		766318112B90B889000818AC /* Comparable+Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+Tools.swift"; sourceTree = "<group>"; };
+		766318142B90CB5B000818AC /* TowelNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowelNode.swift; sourceTree = "<group>"; };
+		766318162B90CC20000818AC /* Array+SKTextures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+SKTextures.swift"; sourceTree = "<group>"; };
+		766318192B90D9C6000818AC /* Picked.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Picked.wav; sourceTree = "<group>"; };
+		7663181A2B90D9C6000818AC /* Hit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Hit.wav; sourceTree = "<group>"; };
+		7663181E2B90D9EB000818AC /* SoundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundController.swift; sourceTree = "<group>"; };
+		766318202B90DF8A000818AC /* background.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = background.wav; sourceTree = "<group>"; };
+		766318222B90E43B000818AC /* gameover.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gameover.WAV; sourceTree = "<group>"; };
+		766318242B90E69C000818AC /* ScoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreController.swift; sourceTree = "<group>"; };
+		766318262B90E6BD000818AC /* ScoreNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreNode.swift; sourceTree = "<group>"; };
+		7663182B2B90EA9B000818AC /* Chef-War-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Chef-War-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7663182E2B90EB6A000818AC /* Downhill Dive DEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Downhill Dive DEMO.otf"; sourceTree = "<group>"; };
+		766318302B90EC0B000818AC /* PPMori-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PPMori-Regular.otf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		766317E82B8FD067000818AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		766317E22B8FD067000818AC = {
+			isa = PBXGroup;
+			children = (
+				766317ED2B8FD067000818AC /* Chef War */,
+				766317EC2B8FD067000818AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		766317EC2B8FD067000818AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				766317EB2B8FD067000818AC /* Chef War.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		766317ED2B8FD067000818AC /* Chef War */ = {
+			isa = PBXGroup;
+			children = (
+				7663182B2B90EA9B000818AC /* Chef-War-Info.plist */,
+				7663181D2B90D9DB000818AC /* Controller */,
+				766318132B90BFAE000818AC /* Assets */,
+				7663180A2B8FD520000818AC /* Tools */,
+				766318052B8FD122000818AC /* Nodes */,
+				766317EE2B8FD067000818AC /* AppDelegate.swift */,
+				766317F02B8FD067000818AC /* GameScene.sks */,
+				766317F42B8FD067000818AC /* GameScene.swift */,
+				766317F62B8FD067000818AC /* GameViewController.swift */,
+				766317F82B8FD067000818AC /* Main.storyboard */,
+				766317FB2B8FD069000818AC /* Assets.xcassets */,
+				766317FD2B8FD069000818AC /* LaunchScreen.storyboard */,
+				7663180F2B90B0F7000818AC /* GameScene+ContactDelegate.swift */,
+			);
+			path = "Chef War";
+			sourceTree = "<group>";
+		};
+		766318052B8FD122000818AC /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				766318062B8FD137000818AC /* ChefNode.swift */,
+				766318082B8FD315000818AC /* CleaverNode.swift */,
+				7663180D2B8FD6D0000818AC /* AntNode.swift */,
+				766318142B90CB5B000818AC /* TowelNode.swift */,
+				766318262B90E6BD000818AC /* ScoreNode.swift */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		7663180A2B8FD520000818AC /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				7663180B2B8FD52C000818AC /* CGPoint+Tools.swift */,
+				766318112B90B889000818AC /* Comparable+Tools.swift */,
+				766318162B90CC20000818AC /* Array+SKTextures.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		766318132B90BFAE000818AC /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7663182A2B90EA1C000818AC /* Fonts */,
+				766318182B90D9BD000818AC /* Sounds */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		766318182B90D9BD000818AC /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				766318202B90DF8A000818AC /* background.wav */,
+				766318222B90E43B000818AC /* gameover.WAV */,
+				7663181A2B90D9C6000818AC /* Hit.wav */,
+				766318192B90D9C6000818AC /* Picked.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		7663181D2B90D9DB000818AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7663181E2B90D9EB000818AC /* SoundController.swift */,
+				766318242B90E69C000818AC /* ScoreController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7663182A2B90EA1C000818AC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				766318302B90EC0B000818AC /* PPMori-Regular.otf */,
+				7663182E2B90EB6A000818AC /* Downhill Dive DEMO.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		766317EA2B8FD067000818AC /* Chef War */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 766318022B8FD069000818AC /* Build configuration list for PBXNativeTarget "Chef War" */;
+			buildPhases = (
+				766317E72B8FD067000818AC /* Sources */,
+				766317E82B8FD067000818AC /* Frameworks */,
+				766317E92B8FD067000818AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Chef War";
+			productName = "Chef War";
+			productReference = 766317EB2B8FD067000818AC /* Chef War.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		766317E32B8FD067000818AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					766317EA2B8FD067000818AC = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 766317E62B8FD067000818AC /* Build configuration list for PBXProject "Chef War" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 766317E22B8FD067000818AC;
+			productRefGroup = 766317EC2B8FD067000818AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				766317EA2B8FD067000818AC /* Chef War */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		766317E92B8FD067000818AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7663181C2B90D9C6000818AC /* Hit.wav in Resources */,
+				766318312B90EC0B000818AC /* PPMori-Regular.otf in Resources */,
+				766317FA2B8FD067000818AC /* Main.storyboard in Resources */,
+				7663182F2B90EB6A000818AC /* Downhill Dive DEMO.otf in Resources */,
+				766317F12B8FD067000818AC /* GameScene.sks in Resources */,
+				766317FC2B8FD069000818AC /* Assets.xcassets in Resources */,
+				766318212B90DF8B000818AC /* background.wav in Resources */,
+				7663181B2B90D9C6000818AC /* Picked.wav in Resources */,
+				766318232B90E43B000818AC /* gameover.WAV in Resources */,
+				766317FF2B8FD069000818AC /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		766317E72B8FD067000818AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				766317F52B8FD067000818AC /* GameScene.swift in Sources */,
+				7663181F2B90D9EB000818AC /* SoundController.swift in Sources */,
+				766318152B90CB5B000818AC /* TowelNode.swift in Sources */,
+				766318092B8FD315000818AC /* CleaverNode.swift in Sources */,
+				766318072B8FD137000818AC /* ChefNode.swift in Sources */,
+				766317F72B8FD067000818AC /* GameViewController.swift in Sources */,
+				766318272B90E6BD000818AC /* ScoreNode.swift in Sources */,
+				766318102B90B0F7000818AC /* GameScene+ContactDelegate.swift in Sources */,
+				766318252B90E69C000818AC /* ScoreController.swift in Sources */,
+				7663180C2B8FD52C000818AC /* CGPoint+Tools.swift in Sources */,
+				7663180E2B8FD6D0000818AC /* AntNode.swift in Sources */,
+				766318172B90CC20000818AC /* Array+SKTextures.swift in Sources */,
+				766318122B90B889000818AC /* Comparable+Tools.swift in Sources */,
+				766317EF2B8FD067000818AC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		766317F82B8FD067000818AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				766317F92B8FD067000818AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		766317FD2B8FD069000818AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				766317FE2B8FD069000818AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		766318002B8FD069000818AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		766318012B8FD069000818AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		766318032B8FD069000818AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BD3VK3HR67;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Chef-War-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.behindPixelLab.Chef-War";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		766318042B8FD069000818AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BD3VK3HR67;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Chef-War-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.behindPixelLab.Chef-War";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		766317E62B8FD067000818AC /* Build configuration list for PBXProject "Chef War" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				766318002B8FD069000818AC /* Debug */,
+				766318012B8FD069000818AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		766318022B8FD069000818AC /* Build configuration list for PBXNativeTarget "Chef War" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				766318032B8FD069000818AC /* Debug */,
+				766318042B8FD069000818AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 766317E32B8FD067000818AC /* Project object */;
+}
