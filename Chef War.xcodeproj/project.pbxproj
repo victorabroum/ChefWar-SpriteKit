@@ -31,6 +31,8 @@
 		766318272B90E6BD000818AC /* ScoreNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766318262B90E6BD000818AC /* ScoreNode.swift */; };
 		7663182F2B90EB6A000818AC /* Downhill Dive DEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7663182E2B90EB6A000818AC /* Downhill Dive DEMO.otf */; };
 		766318312B90EC0B000818AC /* PPMori-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 766318302B90EC0B000818AC /* PPMori-Regular.otf */; };
+		766318352B90FB6E000818AC /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 766318332B90FB6E000818AC /* Explosion.sks */; };
+		766318362B90FB6E000818AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766318342B90FB6E000818AC /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		7663182B2B90EA9B000818AC /* Chef-War-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Chef-War-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7663182E2B90EB6A000818AC /* Downhill Dive DEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Downhill Dive DEMO.otf"; sourceTree = "<group>"; };
 		766318302B90EC0B000818AC /* PPMori-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PPMori-Regular.otf"; sourceTree = "<group>"; };
+		766318332B90FB6E000818AC /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
+		766318342B90FB6E000818AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,7 @@
 		766318132B90BFAE000818AC /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				766318322B90FB4F000818AC /* Particles */,
 				7663182A2B90EA1C000818AC /* Fonts */,
 				766318182B90D9BD000818AC /* Sounds */,
 			);
@@ -167,6 +172,15 @@
 				7663182E2B90EB6A000818AC /* Downhill Dive DEMO.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		766318322B90FB4F000818AC /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				766318332B90FB6E000818AC /* Explosion.sks */,
+				766318342B90FB6E000818AC /* Assets.xcassets */,
+			);
+			path = Particles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,10 +246,12 @@
 				766317FA2B8FD067000818AC /* Main.storyboard in Resources */,
 				7663182F2B90EB6A000818AC /* Downhill Dive DEMO.otf in Resources */,
 				766317F12B8FD067000818AC /* GameScene.sks in Resources */,
+				766318352B90FB6E000818AC /* Explosion.sks in Resources */,
 				766317FC2B8FD069000818AC /* Assets.xcassets in Resources */,
 				766318212B90DF8B000818AC /* background.wav in Resources */,
 				7663181B2B90D9C6000818AC /* Picked.wav in Resources */,
 				766318232B90E43B000818AC /* gameover.WAV in Resources */,
+				766318362B90FB6E000818AC /* Assets.xcassets in Resources */,
 				766317FF2B8FD069000818AC /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

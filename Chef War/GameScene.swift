@@ -40,7 +40,7 @@ class GameScene: SKScene {
         
         let scoreNode = ScoreNode()
         scoreNode.position.y = (self.size.width/2) * 0.35
-        scoreNode.position.x += 10
+        scoreNode.position.x += 30
         scoreNode.zPosition = 99
         self.camera?.addChild(scoreNode)
         
@@ -138,20 +138,22 @@ class GameScene: SKScene {
         titleNode.zPosition = 99
         titleNode.texture?.filteringMode = .nearest
         titleNode.setScale(0)
-        titleNode.position.y += 35
+        titleNode.position.y += 15
         self.addChild(titleNode)
         
         let textLabel = SKLabelNode(text: "Click to restart!")
         textLabel.fontName = "PPMori-Regular"
         textLabel.alpha = 0
-        textLabel.fontSize = 18
+        textLabel.fontSize = 24
         self.addChild(textLabel)
-        textLabel.position.y -= titleNode.size.height / 2 + 50
+        textLabel.setScale(0.5)
+        textLabel.position.y -= titleNode.size.height / 2 + 75
+        textLabel.isHidden = true
         
         titleNode.run(.sequence([
             .scale(to: 3, duration: 0.3),
-            .scale(to: 0.8, duration: 0.2),
-            .scale(to: 1, duration: 0.1),
+            .scale(to: 0.5, duration: 0.2),
+            .scale(to: 0.6, duration: 0.1),
             .repeatForever(.sequence([
                 .move(by: .init(dx: 0, dy: 5), duration: 0.3),
                 .move(by: .init(dx: 0, dy: -10), duration: 0.6),
@@ -162,10 +164,15 @@ class GameScene: SKScene {
         titleNode.run(.sequence([
             .wait(forDuration: 2),
             .run {
-                textLabel.run(.fadeIn(withDuration: 1))
+                textLabel.isHidden = false
                 self.canResetGame = true
             }
         ]))
+        
+        textLabel.run(.repeatForever(.sequence([
+            .fadeAlpha(to: 0.4, duration: 0.3),
+            .fadeAlpha(to: 1, duration: 0.3),
+        ])))
     }
     
     private func resetGame() {

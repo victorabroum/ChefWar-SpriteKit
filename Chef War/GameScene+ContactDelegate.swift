@@ -19,11 +19,13 @@ extension GameScene: SKPhysicsContactDelegate {
     }
     
     private func handleContactCleaver_Ant(nodeA: SKNode, nodeB: SKNode) {
-        if nodeA is CleaverNode && nodeB is AntNode {
+        if nodeA is CleaverNode, let antNode = nodeB as? AntNode {
             SoundController.shared.playSoundFX(named: "Hit.wav")
             scoreController.addScore()
+            
             nodeA.removeFromParent()
-            nodeB.removeFromParent()
+            
+            antNode.death()
         }
     }
     

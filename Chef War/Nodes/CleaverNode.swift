@@ -28,7 +28,7 @@ class CleaverNode: SKNode {
     }
     
     private func setupPhysics() {
-        let body = SKPhysicsBody(rectangleOf: sprite.size)
+        let body = SKPhysicsBody(circleOfRadius: sprite.size.width/4)
         body.affectedByGravity = false
         body.categoryBitMask = 1
         body.collisionBitMask = 0
