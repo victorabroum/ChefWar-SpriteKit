@@ -22,7 +22,6 @@
 		766318122B90B889000818AC /* Comparable+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766318112B90B889000818AC /* Comparable+Tools.swift */; };
 		766318152B90CB5B000818AC /* TowelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766318142B90CB5B000818AC /* TowelNode.swift */; };
 		766318172B90CC20000818AC /* Array+SKTextures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766318162B90CC20000818AC /* Array+SKTextures.swift */; };
-		7663181B2B90D9C6000818AC /* Picked.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766318192B90D9C6000818AC /* Picked.wav */; };
 		7663181C2B90D9C6000818AC /* Hit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7663181A2B90D9C6000818AC /* Hit.wav */; };
 		7663181F2B90D9EB000818AC /* SoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663181E2B90D9EB000818AC /* SoundController.swift */; };
 		766318212B90DF8B000818AC /* background.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766318202B90DF8A000818AC /* background.wav */; };
@@ -33,6 +32,7 @@
 		766318312B90EC0B000818AC /* PPMori-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 766318302B90EC0B000818AC /* PPMori-Regular.otf */; };
 		766318352B90FB6E000818AC /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 766318332B90FB6E000818AC /* Explosion.sks */; };
 		766318362B90FB6E000818AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766318342B90FB6E000818AC /* Assets.xcassets */; };
+		766318382B91112C000818AC /* Picked.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766318372B91112C000818AC /* Picked.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +52,6 @@
 		766318112B90B889000818AC /* Comparable+Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+Tools.swift"; sourceTree = "<group>"; };
 		766318142B90CB5B000818AC /* TowelNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowelNode.swift; sourceTree = "<group>"; };
 		766318162B90CC20000818AC /* Array+SKTextures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+SKTextures.swift"; sourceTree = "<group>"; };
-		766318192B90D9C6000818AC /* Picked.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Picked.wav; sourceTree = "<group>"; };
 		7663181A2B90D9C6000818AC /* Hit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Hit.wav; sourceTree = "<group>"; };
 		7663181E2B90D9EB000818AC /* SoundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundController.swift; sourceTree = "<group>"; };
 		766318202B90DF8A000818AC /* background.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = background.wav; sourceTree = "<group>"; };
@@ -64,6 +63,7 @@
 		766318302B90EC0B000818AC /* PPMori-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PPMori-Regular.otf"; sourceTree = "<group>"; };
 		766318332B90FB6E000818AC /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
 		766318342B90FB6E000818AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		766318372B91112C000818AC /* Picked.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Picked.wav; path = ../../../../../../Downloads/Picked.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,10 +148,10 @@
 		766318182B90D9BD000818AC /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				766318372B91112C000818AC /* Picked.wav */,
 				766318202B90DF8A000818AC /* background.wav */,
 				766318222B90E43B000818AC /* gameover.WAV */,
 				7663181A2B90D9C6000818AC /* Hit.wav */,
-				766318192B90D9C6000818AC /* Picked.wav */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -247,9 +247,9 @@
 				7663182F2B90EB6A000818AC /* Downhill Dive DEMO.otf in Resources */,
 				766317F12B8FD067000818AC /* GameScene.sks in Resources */,
 				766318352B90FB6E000818AC /* Explosion.sks in Resources */,
+				766318382B91112C000818AC /* Picked.wav in Resources */,
 				766317FC2B8FD069000818AC /* Assets.xcassets in Resources */,
 				766318212B90DF8B000818AC /* background.wav in Resources */,
-				7663181B2B90D9C6000818AC /* Picked.wav in Resources */,
 				766318232B90E43B000818AC /* gameover.WAV in Resources */,
 				766318362B90FB6E000818AC /* Assets.xcassets in Resources */,
 				766317FF2B8FD069000818AC /* LaunchScreen.storyboard in Resources */,

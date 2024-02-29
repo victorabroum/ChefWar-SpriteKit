@@ -41,7 +41,7 @@ class CleaverNode: SKNode {
     }
     
     public func spiked() {
-//        SoundController.shared.playSoundFX(named: "Picked.wav")
+        SoundController.shared.playSoundFX(named: "Picked.wav")
         physicsBody = nil
         sprite.texture = .init(imageNamed: "cleaver_spiked")
         sprite.texture?.filteringMode = .nearest
