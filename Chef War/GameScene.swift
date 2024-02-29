@@ -207,4 +207,8 @@ class GameScene: SKScene {
         
     }
     
+    internal func cameraShake() {
+        self.camera?.run(.shake(duration: 0.2))
+    }
+    
 }

@@ -20,6 +20,7 @@ extension GameScene: SKPhysicsContactDelegate {
     
     private func handleContactCleaver_Ant(nodeA: SKNode, nodeB: SKNode) {
         if nodeA is CleaverNode, let antNode = nodeB as? AntNode {
+            cameraShake()
             SoundController.shared.playSoundFX(named: "Hit.wav")
             scoreController.addScore()
             

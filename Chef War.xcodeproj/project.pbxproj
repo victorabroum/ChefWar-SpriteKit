@@ -33,6 +33,7 @@
 		766318352B90FB6E000818AC /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 766318332B90FB6E000818AC /* Explosion.sks */; };
 		766318362B90FB6E000818AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766318342B90FB6E000818AC /* Assets.xcassets */; };
 		766318382B91112C000818AC /* Picked.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766318372B91112C000818AC /* Picked.wav */; };
+		7663183A2B91130E000818AC /* Actions+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766318392B91130E000818AC /* Actions+Custom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		766318332B90FB6E000818AC /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
 		766318342B90FB6E000818AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		766318372B91112C000818AC /* Picked.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Picked.wav; path = ../../../../../../Downloads/Picked.wav; sourceTree = "<group>"; };
+		766318392B91130E000818AC /* Actions+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Actions+Custom.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				7663180B2B8FD52C000818AC /* CGPoint+Tools.swift */,
 				766318112B90B889000818AC /* Comparable+Tools.swift */,
 				766318162B90CC20000818AC /* Array+SKTextures.swift */,
+				766318392B91130E000818AC /* Actions+Custom.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				766317F72B8FD067000818AC /* GameViewController.swift in Sources */,
 				766318272B90E6BD000818AC /* ScoreNode.swift in Sources */,
 				766318102B90B0F7000818AC /* GameScene+ContactDelegate.swift in Sources */,
+				7663183A2B91130E000818AC /* Actions+Custom.swift in Sources */,
 				766318252B90E69C000818AC /* ScoreController.swift in Sources */,
 				7663180C2B8FD52C000818AC /* CGPoint+Tools.swift in Sources */,
 				7663180E2B8FD6D0000818AC /* AntNode.swift in Sources */,
