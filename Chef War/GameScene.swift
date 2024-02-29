@@ -47,6 +47,8 @@ class GameScene: SKScene {
         
         self.backgroundColor = UIColor(red: 0.12, green: 0.44, blue: 0.31, alpha: 1.00)
         
+        generateGrass(amount: 50)
+        
         let scoreNode = ScoreNode()
         scoreNode.position.y = (self.size.width/2) * 0.35
         scoreNode.position.x += 30
@@ -211,4 +213,16 @@ class GameScene: SKScene {
         self.camera?.run(.shake(duration: 0.2))
     }
     
+    private func generateGrass(amount: Int) {
+        for _ in 0...amount {
+            let randomIndex = Int.random(in: 1...5)
+            let grassNode = SKSpriteNode(imageNamed: "grass_\(randomIndex)")
+            
+            grassNode.texture?.filteringMode = .nearest
+            grassNode.zPosition = -100
+            grassNode.position = .randomPosition(in: -300...300)
+            
+            self.addChild(grassNode)
+        }
+    }
 }
