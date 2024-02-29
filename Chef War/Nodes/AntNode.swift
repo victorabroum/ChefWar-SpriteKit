@@ -48,8 +48,8 @@ class AntNode: SKNode {
         sprite.texture?.filteringMode = .nearest
         
         particleExplosion.setScale(0.4)
-        
         self.addChild(particleExplosion)
+        
         self.run(.sequence([
             .wait(forDuration: 0.5),
             .removeFromParent()

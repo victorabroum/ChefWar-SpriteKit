@@ -19,6 +19,8 @@ class GameScene: SKScene {
     private var isGameOver: Bool = false
     private var canResetGame: Bool = false
     
+    private var circleTransition: SKShapeNode?
+    
     internal var scoreController: ScoreController!
     
     override func sceneDidLoad() {
@@ -30,6 +32,13 @@ class GameScene: SKScene {
         
         SoundController.shared.setup(scene: self)
         SoundController.shared.playBackgroundMusic()
+        
+        circleTransition = .init(circleOfRadius: self.size.width)
+        circleTransition?.fillColor = .black
+        circleTransition?.strokeColor = .clear
+        circleTransition?.zPosition = 500
+        self.addChild(circleTransition!)
+        circleTransition()
         
         let camera = SKCameraNode()
         self.addChild(camera)
@@ -130,12 +139,13 @@ class GameScene: SKScene {
             return
         }
         
+        circleTransition(out: false)
         SoundController.shared.playGameOverMusic()
         
         isGameOver = true
         
         let titleNode = SKSpriteNode(imageNamed: "game over")
-        titleNode.zPosition = 99
+        titleNode.zPosition = 600
         titleNode.texture?.filteringMode = .nearest
         titleNode.setScale(0)
         titleNode.position.y += 15
@@ -149,8 +159,10 @@ class GameScene: SKScene {
         textLabel.setScale(0.5)
         textLabel.position.y -= titleNode.size.height / 2 + 75
         textLabel.isHidden = true
+        textLabel.zPosition = titleNode.zPosition
         
         titleNode.run(.sequence([
+            .wait(forDuration: 0.5),
             .scale(to: 3, duration: 0.3),
             .scale(to: 0.5, duration: 0.2),
             .scale(to: 0.6, duration: 0.1),
@@ -180,6 +192,19 @@ class GameScene: SKScene {
         isGameOver = false
         canResetGame = false
         setupScene()
+    }
+    
+    private func circleTransition(out value: Bool = true) {
+        
+        let action = SKAction.scale(to: 1, duration: 1.3)
+        action.timingMode = .easeInEaseOut
+        
+        if value {
+            circleTransition?.run(.scale(to: 0, duration: 1.3))
+        } else {
+            circleTransition?.run(action)
+        }
+        
     }
     
 }
