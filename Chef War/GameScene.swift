@@ -103,7 +103,7 @@ class GameScene: SKScene {
         
         let speed: CGFloat = .random(in: 35...75)
         let distance = antNode.position.distance(point: .zero)
-        let travelTime = distance / speed
+        let travelTime = TimeInterval.calculateTravelTime(speed: speed, distance: distance)
         
         antNode.xScale = antNode.position.x < 0 ? -1 : 1
         
@@ -120,9 +120,8 @@ class GameScene: SKScene {
         let newCleaver = CleaverNode()
         self.addChild(newCleaver)
         
-        let cleaverSpeed: CGFloat = 200
         let distance = newCleaver.position.distance(point: location)
-        let travelTime = distance / cleaverSpeed
+        let travelTime = TimeInterval.calculateTravelTime(speed: 200, distance: distance)
         
         newCleaver.run(.sequence([
             .group([

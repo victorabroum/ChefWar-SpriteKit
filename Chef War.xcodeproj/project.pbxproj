@@ -32,6 +32,7 @@
 		766318352B90FB6E000818AC /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 766318332B90FB6E000818AC /* Explosion.sks */; };
 		766318362B90FB6E000818AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766318342B90FB6E000818AC /* Assets.xcassets */; };
 		7663183A2B91130E000818AC /* Actions+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766318392B91130E000818AC /* Actions+Custom.swift */; };
+		769DF7B22B97484C00C33A81 /* TimeInterval+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769DF7B12B97484C00C33A81 /* TimeInterval+Tools.swift */; };
 		76D544262B911B1200025996 /* Hurt.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76D544252B911B1200025996 /* Hurt.wav */; };
 		76D5442E2B911C0500025996 /* Picked.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76D5442D2B911C0500025996 /* Picked.wav */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		766318332B90FB6E000818AC /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
 		766318342B90FB6E000818AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		766318392B91130E000818AC /* Actions+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Actions+Custom.swift"; sourceTree = "<group>"; };
+		769DF7B12B97484C00C33A81 /* TimeInterval+Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Tools.swift"; sourceTree = "<group>"; };
 		76D544252B911B1200025996 /* Hurt.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Hurt.wav; sourceTree = "<group>"; };
 		76D5442D2B911C0500025996 /* Picked.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Picked.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,6 +136,7 @@
 				766318112B90B889000818AC /* Comparable+Tools.swift */,
 				766318162B90CC20000818AC /* Array+SKTextures.swift */,
 				766318392B91130E000818AC /* Actions+Custom.swift */,
+				769DF7B12B97484C00C33A81 /* TimeInterval+Tools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				766317F52B8FD067000818AC /* GameScene.swift in Sources */,
 				7663181F2B90D9EB000818AC /* SoundController.swift in Sources */,
 				766318152B90CB5B000818AC /* TowelNode.swift in Sources */,
+				769DF7B22B97484C00C33A81 /* TimeInterval+Tools.swift in Sources */,
 				766318092B8FD315000818AC /* CleaverNode.swift in Sources */,
 				766318072B8FD137000818AC /* ChefNode.swift in Sources */,
 				766317F72B8FD067000818AC /* GameViewController.swift in Sources */,
